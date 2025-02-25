@@ -4,5 +4,6 @@ import { movePiece,movePawn } from './move';
 
 const arbiter = {
 
-
+    getRegularMoves : function ({position,piece,rank,file}) {
+    },
     },
