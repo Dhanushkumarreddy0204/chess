@@ -11,5 +11,7 @@ const arbiter = {
             return getBishopMoves({position,piece,rank,file});
         if (piece.endsWith('r'))
             return getRookMoves({position,piece,rank,file});
+        if (piece.endsWith('q'))
+            return getQueenMoves({position,piece,rank,file});
     },
 }
