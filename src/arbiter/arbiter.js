@@ -24,6 +24,11 @@ const arbiter = {
         let moves = this.getRegularMoves({position,piece,rank,file})
         const notInCheckMoves = []
 
-        
+        if (piece.endsWith('p')){
+            moves = [
+                ...moves,
+                ...getPawnCaptures({position,prevPosition,piece,rank,file})
+            ]
+        }
     },
 }
