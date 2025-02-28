@@ -18,4 +18,12 @@ const arbiter = {
         if (piece.endsWith('p'))
             return getPawnMoves({position,piece,rank,file})
     },
+
+
+    getValidMoves : function ({position,castleDirection,prevPosition,piece,rank,file}) {
+        let moves = this.getRegularMoves({position,piece,rank,file})
+        const notInCheckMoves = []
+
+        
+    },
 }
