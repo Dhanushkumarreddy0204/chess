@@ -15,5 +15,7 @@ const arbiter = {
             return getQueenMoves({position,piece,rank,file});
         if (piece.endsWith('k'))
             return getKingMoves({position,piece,rank,file});
+        if (piece.endsWith('p'))
+            return getPawnMoves({position,piece,rank,file})
     },
 }
