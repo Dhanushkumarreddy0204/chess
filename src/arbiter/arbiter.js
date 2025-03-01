@@ -47,5 +47,9 @@ const arbiter = {
         return notInCheckMoves
     },
 
+    isPlayerInCheck : function ({positionAfterMove, position, player}) {
+        
     },
+
+},
     
