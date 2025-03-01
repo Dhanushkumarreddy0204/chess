@@ -51,6 +51,21 @@ const arbiter = {
         const enemy = player.startsWith('w') ? 'b' : 'w'
         let kingPos = getKingPosition(positionAfterMove,player)
         const enemyPieces = getPieces(positionAfterMove,enemy)
+
+        const enemyMoves = enemyPieces.reduce((acc,p) => acc = [
+            ...acc,
+            ...(p.piece.endsWith('p')
+            ?   getPawnCaptures({
+                    position: positionAfterMove, 
+                    prevPosition:  position,
+                    ...p
+                })
+            :   this.getRegularMoves({
+                    position: positionAfterMove, 
+                    ...p
+                })
+            )
+        ], [])
     },
 
 },
