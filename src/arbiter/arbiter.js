@@ -69,6 +69,9 @@ const arbiter = {
 
         if (enemyMoves.some (([x,y]) => kingPos[0] === x && kingPos[1] === y))
             return true
+
+        else
+        return false
     },
 
 },
