@@ -48,7 +48,9 @@ const arbiter = {
     },
 
     isPlayerInCheck : function ({positionAfterMove, position, player}) {
-        
+        const enemy = player.startsWith('w') ? 'b' : 'w'
+        let kingPos = getKingPosition(positionAfterMove,player)
+        const enemyPieces = getPieces(positionAfterMove,enemy)
     },
 
 },
