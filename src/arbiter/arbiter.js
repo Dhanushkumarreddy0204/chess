@@ -80,5 +80,9 @@ const arbiter = {
             return movePiece({position,piece,rank,file,x,y})
     },
 
+
+    isStalemate : function(position,player,castleDirection) {
+        const isInCheck = this.isPlayerInCheck({positionAfterMove: position, player})
+
 },
     
