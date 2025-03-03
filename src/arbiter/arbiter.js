@@ -73,6 +73,12 @@ const arbiter = {
         else
         return false
     },
+    performMove : function ({position,piece,rank,file,x,y}) {
+        if (piece.endsWith('p'))
+            return movePawn({position,piece,rank,file,x,y})
+        else 
+            return movePiece({position,piece,rank,file,x,y})
+    },
 
 },
     
