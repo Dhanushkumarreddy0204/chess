@@ -98,7 +98,8 @@ const arbiter = {
             )
         ], [])
 
-        
+        return (!isInCheck && moves.length === 0)
+    },
 
 },
     
