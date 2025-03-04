@@ -109,6 +109,10 @@ const arbiter = {
                     ...acc,
                     ...rank.filter(spot => spot)
                 ],[])
+        
+        // King vs. king
+        if (pieces.length === 2)
+            return true
 
 },
     
