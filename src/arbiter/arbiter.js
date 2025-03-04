@@ -100,6 +100,15 @@ const arbiter = {
 
         return (!isInCheck && moves.length === 0)
     },
+    
+    insufficientMaterial : function(position) {
+
+        const pieces = 
+            position.reduce((acc,rank) => 
+                acc = [
+                    ...acc,
+                    ...rank.filter(spot => spot)
+                ],[])
 
 },
     
