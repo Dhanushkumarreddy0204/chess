@@ -113,6 +113,11 @@ const arbiter = {
         // King vs. king
         if (pieces.length === 2)
             return true
+        // King and bishop vs. king
+        // King and knight vs. king
+        if (pieces.length === 3 && pieces.some(p => p.endsWith('b') || p.endsWith('n')))
+            return true
 
+        
 },
     
