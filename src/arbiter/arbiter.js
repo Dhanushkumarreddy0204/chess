@@ -118,6 +118,18 @@ const arbiter = {
         if (pieces.length === 3 && pieces.some(p => p.endsWith('b') || p.endsWith('n')))
             return true
 
-        
+        // King and bishop vs. king and bishop of the same color as the opponent's bishop
+        if (pieces.length === 4 && 
+            pieces.every(p => p.endsWith('b') || p.endsWith('k')) &&
+            new Set(pieces).size === 4 &&
+            areSameColorTiles(
+                findPieceCoords(position,'wb')[0],
+                findPieceCoords(position,'bb')[0]
+            )
+        )
+            return true
+
+        return false
+    },
 },
     
