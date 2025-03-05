@@ -132,6 +132,7 @@ const arbiter = {
         return false
     },
 
-    isCheckMate : function(position,player,castleDirection)
+    isCheckMate : function(position,player,castleDirection){
+        const isInCheck = this.isPlayerInCheck({positionAfterMove: position, player})
 },
     
