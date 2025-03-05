@@ -134,5 +134,12 @@ const arbiter = {
 
     isCheckMate : function(position,player,castleDirection){
         const isInCheck = this.isPlayerInCheck({positionAfterMove: position, player})
+
+        if (!isInCheck)
+            return false
+            
+        const pieces = getPieces(position,player)
+        const moves = pieces.reduce((acc,p) => acc = [
+            ...acc,
 },
     
