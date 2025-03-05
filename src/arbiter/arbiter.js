@@ -141,5 +141,10 @@ const arbiter = {
         const pieces = getPieces(position,player)
         const moves = pieces.reduce((acc,p) => acc = [
             ...acc,
+            ...(this.getValidMoves({
+                position, 
+                castleDirection, 
+                ...p
+            })
 },
     
