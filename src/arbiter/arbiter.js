@@ -131,5 +131,7 @@ const arbiter = {
 
         return false
     },
+
+    isCheckMate : function(position,player,castleDirection)
 },
     
