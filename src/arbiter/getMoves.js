@@ -12,4 +12,7 @@ export const getRookMoves = ({position,piece,rank,file}) => {
         [0,1],
     ]
 
-    
+    direction.forEach(dir => {
+        for (let i = 1; i <= 8; i++) {
+            const x = rank+(i*dir[0])
+            const y = file+(i*dir[1])
