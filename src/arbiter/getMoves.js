@@ -22,3 +22,12 @@ export const getRookMoves = ({position,piece,rank,file}) => {
                 moves.push ([x,y])
                 break;
             }
+            if(position[x][y].startsWith(us)){
+                break
+            }
+            moves.push ([x,y])
+        }
+    })
+
+    return moves
+}
