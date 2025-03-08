@@ -35,3 +35,14 @@ export const getRookMoves = ({position,piece,rank,file}) => {
 export const getKnightMoves = ({position,rank,file}) => {
     const moves = []
     const enemy = position[rank][file].startsWith('w') ? 'b' : 'w'
+
+    const candidates = [
+        [-2,-1],
+        [-2,1],
+        [-1,-2],
+        [-1,2],
+        [1,-2],
+        [1,2],
+        [2,-1],
+        [2,1],
+    ]
