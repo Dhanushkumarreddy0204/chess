@@ -16,3 +16,5 @@ export const getRookMoves = ({position,piece,rank,file}) => {
         for (let i = 1; i <= 8; i++) {
             const x = rank+(i*dir[0])
             const y = file+(i*dir[1])
+            if(position?.[x]?.[y] === undefined)
+                break
