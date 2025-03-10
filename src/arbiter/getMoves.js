@@ -59,3 +59,10 @@ export const getBishopMoves = ({position,piece,rank,file}) => {
     const moves = []
     const us = piece[0]
     const enemy = us === 'w' ? 'b' : 'w'
+    
+    const direction = [
+        [-1,-1],
+        [-1,1],
+        [1,-1],
+        [1,1],
+    ]
