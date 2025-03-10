@@ -54,3 +54,6 @@ export const getKnightMoves = ({position,rank,file}) => {
     })
     return moves
 }
+
+export const getBishopMoves = ({position,piece,rank,file}) => {
+    const moves = []
