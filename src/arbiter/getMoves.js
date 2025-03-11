@@ -94,3 +94,11 @@ export const getQueenMoves = ({position,piece,rank,file}) => {
     
     return moves
 }
+export const getKingMoves = ({position,piece,rank,file}) => {
+    let moves = []
+    const us = piece[0]
+    const direction = [
+        [1,-1], [1,0],  [1,1],
+        [0,-1],         [0,1],
+        [-1,-1],[-1,0], [-1,1],
+    ]
