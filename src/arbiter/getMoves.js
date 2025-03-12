@@ -121,3 +121,10 @@ export const getPawnMoves = ({position,piece,rank,file}) => {
             moves.push ([rank+dir+dir,file])
         }
     }
+    // Move one tile
+    if (!position?.[rank+dir]?.[file]){
+        moves.push ([rank+dir,file])
+    }
+
+    return moves
+}
