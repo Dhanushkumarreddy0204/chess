@@ -138,4 +138,7 @@ export const getPawnCaptures =  ({position,prevPosition,piece,rank,file}) => {
         moves.push ([rank+dir,file-1])
     }
 
-    
+    // Capture enemy to right
+    if (position?.[rank+dir]?.[file+1] && position[rank+dir][file+1].startsWith(enemy) ){
+        moves.push ([rank+dir,file+1])
+    }
