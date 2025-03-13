@@ -144,3 +144,4 @@ export const getPawnCaptures =  ({position,prevPosition,piece,rank,file}) => {
     }
 
     const enemyPawn = dir === 1 ? 'bp' : 'wp'
+    const adjacentFiles = [file-1,file+1]
