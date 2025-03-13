@@ -142,3 +142,5 @@ export const getPawnCaptures =  ({position,prevPosition,piece,rank,file}) => {
     if (position?.[rank+dir]?.[file+1] && position[rank+dir][file+1].startsWith(enemy) ){
         moves.push ([rank+dir,file+1])
     }
+
+    const enemyPawn = dir === 1 ? 'bp' : 'wp'
