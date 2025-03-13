@@ -131,3 +131,5 @@ export const getPawnMoves = ({position,piece,rank,file}) => {
 export const getPawnCaptures =  ({position,prevPosition,piece,rank,file}) => {
 
     const moves = []
+     const dir = piece==='wp' ? 1 : -1
+    const enemy = piece[0] === 'w' ? 'b' : 'w'
