@@ -163,3 +163,7 @@ export const getPawnCaptures =  ({position,prevPosition,piece,rank,file}) => {
 }
 export const getCastlingMoves = ({position,castleDirection,piece,rank,file}) => {
     const moves = []
+    
+    if (file !== 4 || rank % 7 !== 0 || castleDirection === 'none'){
+        return moves
+    }
