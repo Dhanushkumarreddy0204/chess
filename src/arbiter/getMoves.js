@@ -161,3 +161,5 @@ export const getPawnCaptures =  ({position,prevPosition,piece,rank,file}) => {
 
     return moves
 }
+export const getCastlingMoves = ({position,castleDirection,piece,rank,file}) => {
+    const moves = []
