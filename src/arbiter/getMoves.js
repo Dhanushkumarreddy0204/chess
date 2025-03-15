@@ -178,3 +178,5 @@ export const getCastlingMoves = ({position,castleDirection,piece,rank,file}) => 
         if (['left','both'].includes(castleDirection) && 
         !position[0][3] &&
         !position[0][2] &&
+        !position[0][1] &&
+        position[0][0] === 'wr' &&
