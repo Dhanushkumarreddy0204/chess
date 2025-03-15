@@ -167,3 +167,9 @@ export const getCastlingMoves = ({position,castleDirection,piece,rank,file}) => 
     if (file !== 4 || rank % 7 !== 0 || castleDirection === 'none'){
         return moves
     }
+    if (piece.startsWith('w') ){
+
+        if (arbiter.isPlayerInCheck({
+            positionAfterMove : position,
+            player : 'w'
+        }))
