@@ -174,3 +174,5 @@ export const getCastlingMoves = ({position,castleDirection,piece,rank,file}) => 
             player : 'w'
         }))
             return moves
+            
+        if (['left','both'].includes(castleDirection) && 
