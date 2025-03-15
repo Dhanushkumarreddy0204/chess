@@ -173,3 +173,4 @@ export const getCastlingMoves = ({position,castleDirection,piece,rank,file}) => 
             positionAfterMove : position,
             player : 'w'
         }))
+            return moves
