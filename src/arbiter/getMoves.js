@@ -190,3 +190,4 @@ export const getCastlingMoves = ({position,castleDirection,piece,rank,file}) => 
         })){
             moves.push ([0,2])
         }
+        if (['right','both'].includes(castleDirection)
