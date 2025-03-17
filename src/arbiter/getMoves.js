@@ -190,4 +190,11 @@ export const getCastlingMoves = ({position,castleDirection,piece,rank,file}) => 
         })){
             moves.push ([0,2])
         }
-        if (['right','both'].includes(castleDirection)
+        if (['right','both'].includes(castleDirection)&& 
+        !position[0][5] && 
+        !position[0][6] &&
+        position[0][7] === 'wr' &&
+        !arbiter.isPlayerInCheck({
+            positionAfterMove : arbiter.performMove({position,piece,rank,file,x:0,y:5}),
+            player : 'w'
+        }) 
