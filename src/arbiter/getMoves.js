@@ -183,4 +183,8 @@ export const getCastlingMoves = ({position,castleDirection,piece,rank,file}) => 
             !arbiter.isPlayerInCheck({
             positionAfterMove : arbiter.performMove({position,piece,rank,file,x:0,y:3}),
             player : 'w'
-        })
+        })&&
+        !arbiter.isPlayerInCheck({
+            positionAfterMove : arbiter.performMove({position,piece,rank,file,x:0,y:2}),
+            player : 'w'
+        }))
