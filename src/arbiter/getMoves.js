@@ -206,3 +206,8 @@ export const getCastlingMoves = ({position,castleDirection,piece,rank,file}) => 
             moves.push ([0,6])
         }
     }
+    else {
+        if (arbiter.isPlayerInCheck({
+            positionAfterMove : position,
+            player : 'b'
+        }))
