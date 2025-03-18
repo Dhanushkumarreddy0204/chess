@@ -211,4 +211,4 @@ export const getCastlingMoves = ({position,castleDirection,piece,rank,file}) => 
             positionAfterMove : position,
             player : 'b'
         }))
-        return moves
+            return moves
