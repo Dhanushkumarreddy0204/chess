@@ -229,4 +229,5 @@ export const getCastlingMoves = ({position,castleDirection,piece,rank,file}) => 
                 position : position,
                 player : 'b'
             })){
-            
+                moves.push ([7,2])
+            }
