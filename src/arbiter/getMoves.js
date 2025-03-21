@@ -253,3 +253,7 @@ export const getCastlingMoves = ({position,castleDirection,piece,rank,file}) => 
     return moves
 
 }
+
+export const getCastlingDirections = ({castleDirection,piece,file,rank}) => {
+    file = Number(file)
+    rank = Number(rank)
