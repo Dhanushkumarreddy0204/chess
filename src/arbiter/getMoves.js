@@ -240,4 +240,11 @@ export const getCastlingMoves = ({position,castleDirection,piece,rank,file}) => 
                 positionAfterMove : arbiter.performMove({position,piece,rank,file,x:7,y:5}),
                 position : position,
                 player : 'b'
-            })
+            })&&
+            !arbiter.isPlayerInCheck({
+                positionAfterMove : arbiter.performMove({position,piece,rank,file,x:7,y:6}),
+                position : position,
+                player : 'b'
+            })){
+            moves.push ([7,6])
+        }
