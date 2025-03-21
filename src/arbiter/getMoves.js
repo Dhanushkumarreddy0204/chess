@@ -248,3 +248,8 @@ export const getCastlingMoves = ({position,castleDirection,piece,rank,file}) => 
             })){
             moves.push ([7,6])
         }
+    }
+
+    return moves
+
+}
