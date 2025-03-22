@@ -308,3 +308,6 @@ export const getKingPosition = (position, player) => {
             if(position[x][y].startsWith(player) && position[x][y].endsWith('k'))
                 kingPos=[x,y]
         })
+    })
+    return kingPos
+}
