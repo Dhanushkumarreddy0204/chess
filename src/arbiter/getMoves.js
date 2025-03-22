@@ -301,3 +301,5 @@ export const getPieces = (position, enemy) => {
     })
     return enemyPieces
 }
+export const getKingPosition = (position, player) => {
+    let kingPos 
