@@ -303,3 +303,5 @@ export const getPieces = (position, enemy) => {
 }
 export const getKingPosition = (position, player) => {
     let kingPos 
+    position.forEach((rank,x) => {
+        rank.forEach((file, y) => {
