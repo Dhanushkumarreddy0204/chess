@@ -286,3 +286,8 @@ export const getCastlingDirections = ({castleDirection,piece,file,rank}) => {
             return 'none'
     } 
 }
+
+export const getPieces = (position, enemy) => {
+    const enemyPieces = []
+    position.forEach((rank,x) => {
+        rank.forEach((file, y) => {
