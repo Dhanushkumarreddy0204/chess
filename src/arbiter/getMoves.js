@@ -267,4 +267,9 @@ export const getCastlingDirections = ({castleDirection,piece,file,rank}) => {
         if (direction === 'left')
             return 'none'
     }
-    
+    if (file === 7 && rank === 0 ){ 
+        if (direction === 'both')
+            return 'left'
+        if (direction === 'right')
+            return 'none'
+    } 
