@@ -9,3 +9,8 @@ export const movePiece = ({position,piece,rank,file,x,y}) => {
             newPosition[rank][0] = ''
             newPosition[rank][3] = piece.startsWith('w') ? 'wr' : 'br'
         }
+        if (y === 6){ // Castles Short
+            newPosition[rank][7] = ''
+            newPosition[rank][5] = piece.startsWith('w') ? 'wr' : 'br'
+        }
+    }
