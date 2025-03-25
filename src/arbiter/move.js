@@ -4,4 +4,8 @@ export const movePiece = ({position,piece,rank,file,x,y}) => {
 
     const newPosition = copyPosition(position)
 
-    if(piece.endsWith('k') && Math.abs(y - file) > 1)
+    if(piece.endsWith('k') && Math.abs(y - file) > 1){ // Castles
+        if (y === 2){ // Castles Long
+            newPosition[rank][0] = ''
+            newPosition[rank][3] = piece.startsWith('w') ? 'wr' : 'br'
+        }
