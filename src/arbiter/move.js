@@ -14,3 +14,5 @@ export const movePiece = ({position,piece,rank,file,x,y}) => {
             newPosition[rank][5] = piece.startsWith('w') ? 'wr' : 'br'
         }
     }
+
+    newPosition[rank][file] = ''
