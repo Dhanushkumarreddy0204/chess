@@ -14,7 +14,7 @@ export const movePiece = ({position,piece,rank,file,x,y}) => {
             newPosition[rank][5] = piece.startsWith('w') ? 'wr' : 'br'
         }
     }
-
+    
     newPosition[rank][file] = ''
     newPosition[x][y] = piece
     return newPosition
@@ -28,7 +28,7 @@ export const movePawn = ({position,piece,rank,file,x,y}) => {
     if (!newPosition[x][y] && x !== rank && y !== file) 
         newPosition[rank][y] = ''
 
-     newPosition[rank][file] = ''
-     newPosition[x][y] = piece
-     return newPosition
- }
+    newPosition[rank][file] = ''
+    newPosition[x][y] = piece
+    return newPosition
+}
