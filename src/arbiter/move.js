@@ -28,4 +28,7 @@ export const movePawn = ({position,piece,rank,file,x,y}) => {
     if (!newPosition[x][y] && x !== rank && y !== file) 
         newPosition[rank][y] = ''
 
-    
+     newPosition[rank][file] = ''
+     newPosition[x][y] = piece
+     return newPosition
+ }
