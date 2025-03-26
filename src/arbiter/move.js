@@ -22,3 +22,10 @@ export const movePiece = ({position,piece,rank,file,x,y}) => {
 
 export const movePawn = ({position,piece,rank,file,x,y}) => {
     const newPosition = copyPosition(position)
+
+    // EnPassant, looks like capturing an empty cell
+    // Detect and delete the pawn to be removed
+    if (!newPosition[x][y] && x !== rank && y !== file) 
+        newPosition[rank][y] = ''
+
+    
