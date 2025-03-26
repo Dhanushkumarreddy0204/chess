@@ -16,3 +16,4 @@ export const movePiece = ({position,piece,rank,file,x,y}) => {
     }
 
     newPosition[rank][file] = ''
+    newPosition[x][y] = piece
