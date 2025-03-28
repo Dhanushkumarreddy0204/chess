@@ -1,0 +1,4 @@
+.ranks {
+    color : var(--dark-tile);
+    display: flex;
+    flex-direction: column;
