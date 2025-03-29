@@ -12,3 +12,6 @@
 .tile{
     position: relative;
 }
+.tile--light {
+    background-color: var(--light-tile);
+}
