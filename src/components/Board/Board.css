@@ -15,3 +15,6 @@
 .tile--light {
     background-color: var(--light-tile);
 }
+.tile--dark {
+    background-color: var(--dark-tile);
+}
