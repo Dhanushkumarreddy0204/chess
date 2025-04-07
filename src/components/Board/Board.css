@@ -36,5 +36,7 @@
     border: 6px solid var(--highlight);
     width : calc(var(--tile-size) - 12px);
     height : calc(var(--tile-size) - 12px);
-   
+    border-radius: 50%;
+    left: 0;
+    top: 0;
 }
