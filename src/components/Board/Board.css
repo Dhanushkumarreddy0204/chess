@@ -29,3 +29,9 @@
     left: 25%;
     top: 25%;
 }
+.attacking:after {
+    display: block;
+    position: absolute;
+    content: '';
+    
+}
