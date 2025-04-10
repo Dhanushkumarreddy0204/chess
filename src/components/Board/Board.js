@@ -11,3 +11,4 @@ import arbiter from '../../arbiter/arbiter'
 import { getKingPosition } from '../../arbiter/getMoves'
 
 const Board = () => {
+    const ranks = Array(8).fill().map((x,i) => 8-i)
