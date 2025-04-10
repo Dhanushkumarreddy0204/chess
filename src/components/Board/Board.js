@@ -9,3 +9,5 @@ import Popup from '../Popup/Popup'
 import GameEnds from '../Popup/GameEnds/GameEnds'
 import arbiter from '../../arbiter/arbiter'
 import { getKingPosition } from '../../arbiter/getMoves'
+
+const Board = () => {
