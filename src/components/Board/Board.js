@@ -18,3 +18,7 @@ const Board = () => {
     const position = appState.position[appState.position.length - 1]
 
     const checkTile = (() => {
+        const isInCheck =  (arbiter.isPlayerInCheck({
+            positionAfterMove : position,
+            player : appState.turn
+        }))
