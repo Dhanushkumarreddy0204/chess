@@ -22,3 +22,9 @@ const Board = () => {
             positionAfterMove : position,
             player : appState.turn
         }))
+
+        if (isInCheck)
+            return getKingPosition (position, appState.turn)
+
+        return null
+    })()
