@@ -16,3 +16,5 @@ const Board = () => {
 
     const { appState } = useAppContext();
     const position = appState.position[appState.position.length - 1]
+
+    const checkTile = (() => {
