@@ -38,3 +38,10 @@ const Board = () => {
             else 
                 c+= ' highlight'
         }
+
+        if (checkTile && checkTile[0] === i && checkTile[1] === j) {
+            c+= ' checked'
+        }
+
+        return c
+    }
