@@ -7,6 +7,7 @@ import Pieces from '../Pieces/Pieces'
 import PromotionBox from '../Popup/PromotionBox/PromotionBox'
 import Popup from '../Popup/Popup'
 import GameEnds from '../Popup/GameEnds/GameEnds'
+
 import arbiter from '../../arbiter/arbiter'
 import { getKingPosition } from '../../arbiter/getMoves'
 
@@ -45,6 +46,7 @@ const Board = () => {
 
         return c
     }
+
     return <div className='board'>
 
         <Ranks ranks={ranks}/>
