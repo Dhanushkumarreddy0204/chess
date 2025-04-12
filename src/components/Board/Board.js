@@ -45,3 +45,18 @@ const Board = () => {
 
         return c
     }
+    return <div className='board'>
+
+        <Ranks ranks={ranks}/>
+
+        <div className='tiles'>
+            {ranks.map((rank,i) => 
+                files.map((file,j) => 
+                    <div 
+                        key={file+''+rank} 
+                        i={i}
+                        j={j}
+                        className={`${getClassName(7-i,j)}`}>
+                    </div>
+                ))}
+        </div>
