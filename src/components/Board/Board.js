@@ -60,3 +60,18 @@ const Board = () => {
                     </div>
                 ))}
         </div>
+
+        <Pieces/>
+
+        <Popup>
+            <PromotionBox />
+            <GameEnds />
+        </Popup>
+
+        <Files files={files}/>
+
+    </div>
+    
+}
+
+export default Board
