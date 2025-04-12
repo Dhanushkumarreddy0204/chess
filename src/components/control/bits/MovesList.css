@@ -15,7 +15,6 @@
     position: relative;
     padding-bottom: 5px;
 }
-
 .moves-list div[data-number]:nth-child(odd)::before {
     content: attr(data-number);
     position: absolute;
