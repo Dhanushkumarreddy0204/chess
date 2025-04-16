@@ -4,3 +4,5 @@ const Control = ({children}) => {
         {children}
     </div>
 }
+
+export default Control
