@@ -10,3 +10,5 @@ const Piece = ({
     
     const { appState, dispatch } = useAppContext();
     const { turn, castleDirection, position : currentPosition } = appState
+
+    const onDragStart = e => {
