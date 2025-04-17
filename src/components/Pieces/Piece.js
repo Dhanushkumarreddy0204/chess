@@ -7,5 +7,5 @@ const Piece = ({
     file,
     piece,
 })  => {
-
+    
     const { appState, dispatch } = useAppContext();
