@@ -12,3 +12,8 @@ const Piece = ({
     const { turn, castleDirection, position : currentPosition } = appState
 
     const onDragStart = e => {
+        e.dataTransfer.effectAllowed = "move";
+        e.dataTransfer.setData("text/plain",`${piece},${rank},${file}`)
+        setTimeout(() => {
+            e.target.style.display = 'none'
+        },0)
