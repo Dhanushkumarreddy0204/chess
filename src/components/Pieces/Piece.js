@@ -19,4 +19,12 @@ const Piece = ({
         },0)
 
         if (turn === piece[0]){
-            const candidateMoves =   
+            const candidateMoves =  
+            arbiter.getValidMoves({
+                position : currentPosition[currentPosition.length - 1],
+                prevPosition : currentPosition[currentPosition.length - 2],
+                castleDirection : castleDirection[turn],
+                piece,
+                file,
+                rank
+            })
