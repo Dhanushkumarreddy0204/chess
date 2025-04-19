@@ -16,4 +16,7 @@ const Piece = ({
         e.dataTransfer.setData("text/plain",`${piece},${rank},${file}`)
         setTimeout(() => {
             e.target.style.display = 'none'
-            
+        },0)
+
+        if (turn === piece[0]){
+            const candidateMoves =   
