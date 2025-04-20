@@ -40,3 +40,9 @@ const Piece = ({
             className={`piece ${piece} p-${file}${rank}`}
             draggable={true}   
             onDragStart={onDragStart}
+            onDragEnd={onDragEnd}
+
+        />)
+}
+
+export default Piece
