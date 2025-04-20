@@ -35,3 +35,6 @@ const Piece = ({
     const onDragEnd = e => {
         e.target.style.display = 'block'
       }
+      return (
+        <div 
+            className={`piece ${piece} p-${file}${rank}`}
