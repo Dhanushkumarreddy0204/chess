@@ -28,3 +28,7 @@ const Piece = ({
                 file,
                 rank
             })
+            dispatch(generateCandidates({candidateMoves}))
+        }
+
+    }
