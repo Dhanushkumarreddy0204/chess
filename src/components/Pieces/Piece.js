@@ -32,3 +32,6 @@ const Piece = ({
         }
 
     }
+    const onDragEnd = e => {
+        e.target.style.display = 'block'
+      }
