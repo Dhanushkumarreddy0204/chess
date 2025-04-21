@@ -12,3 +12,6 @@
     background-size: 100%;
     position: absolute;
 }
+
+.piece.bk {background-image: url('../../assets/bk.png');}
+.piece.bq {background-image: url('../../assets/bq.png');}
