@@ -5,3 +5,10 @@
     left: calc(.25*var(--tile-size));
     bottom: calc(.25*var(--tile-size));
 }
+
+.piece {
+    width: 12.5%;
+    height: 12.5%;
+    background-size: 100%;
+    position: absolute;
+}
