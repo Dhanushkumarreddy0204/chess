@@ -35,3 +35,8 @@
 .piece.p-57 {transform: translate(500%,0%);}
 .piece.p-67 {transform: translate(600%,0%);}
 .piece.p-77 {transform: translate(700%,0%);}
+
+.piece.p-06 {transform: translate(0%,100%);}
+.piece.p-16 {transform: translate(100%,100%);}
+.piece.p-26 {transform: translate(200%,100%);}
+.piece.p-36 {transform: translate(300%,100%);}
