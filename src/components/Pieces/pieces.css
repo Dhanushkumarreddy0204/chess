@@ -50,3 +50,7 @@
 .piece.p-15 {transform: translate(100%,200%);}
 .piece.p-25 {transform: translate(200%,200%);}
 .piece.p-35 {transform: translate(300%,200%);}
+.piece.p-45 {transform: translate(400%,200%);}
+.piece.p-55 {transform: translate(500%,200%);}
+.piece.p-65 {transform: translate(600%,200%);}
+.piece.p-75 {transform: translate(700%,200%);}
