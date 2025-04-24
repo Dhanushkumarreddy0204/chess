@@ -44,3 +44,9 @@
 .piece.p-56 {transform: translate(500%,100%);}
 .piece.p-66 {transform: translate(600%,100%);}
 .piece.p-76 {transform: translate(700%,100%);}
+
+
+.piece.p-05 {transform: translate(0%,200%);}
+.piece.p-15 {transform: translate(100%,200%);}
+.piece.p-25 {transform: translate(200%,200%);}
+.piece.p-35 {transform: translate(300%,200%);}
