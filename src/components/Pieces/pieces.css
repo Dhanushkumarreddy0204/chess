@@ -26,7 +26,6 @@
 .piece.wn {background-image: url('../../assets/wn.png');}
 .piece.wp {background-image: url('../../assets/wp.png');}
 
-
 .piece.p-07 {transform: translate(0%,0%);}
 .piece.p-17 {transform: translate(100%,0%);}
 .piece.p-27 {transform: translate(200%,0%);}
@@ -44,7 +43,6 @@
 .piece.p-56 {transform: translate(500%,100%);}
 .piece.p-66 {transform: translate(600%,100%);}
 .piece.p-76 {transform: translate(700%,100%);}
-
 
 .piece.p-05 {transform: translate(0%,200%);}
 .piece.p-15 {transform: translate(100%,200%);}
@@ -95,3 +93,7 @@
 .piece.p-10 {transform: translate(100%,700%);}
 .piece.p-20 {transform: translate(200%,700%);}
 .piece.p-30 {transform: translate(300%,700%);}
+.piece.p-40 {transform: translate(400%,700%);}
+.piece.p-50 {transform: translate(500%,700%);}
+.piece.p-60 {transform: translate(600%,700%);}
+.piece.p-70 {transform: translate(700%,700%);}
