@@ -67,3 +67,6 @@
 .piece.p-03 {transform: translate(0%,400%);}
 .piece.p-13 {transform: translate(100%,400%);}
 .piece.p-23 {transform: translate(200%,400%);}
+.piece.p-33 {transform: translate(300%,400%);}
+.piece.p-43 {transform: translate(400%,400%);}
+.piece.p-53 {transform: translate(500%,400%);}
