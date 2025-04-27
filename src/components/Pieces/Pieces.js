@@ -1,3 +1,6 @@
 import './Pieces.css'
 import Piece from './Piece'
 import { useRef  } from 'react'
+import { useAppContext }from '../../contexts/Context'
+import { openPromotion } from '../../reducer/actions/popup'
+import { getCastlingDirections } from '../../arbiter/getMoves'
