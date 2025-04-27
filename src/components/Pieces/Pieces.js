@@ -10,3 +10,7 @@ import { makeNewMove, clearCandidates } from '../../reducer/actions/move'
 import arbiter from '../../arbiter/arbiter'
 import { getNewMoveNotation } from '../../helper'
 
+const Pieces = () => {
+
+    const { appState , dispatch } = useAppContext();
+    const currentPosition = appState.position[appState.position.length-1]
