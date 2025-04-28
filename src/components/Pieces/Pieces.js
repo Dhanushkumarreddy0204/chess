@@ -14,3 +14,8 @@ const Pieces = () => {
 
     const { appState , dispatch } = useAppContext();
     const currentPosition = appState.position[appState.position.length-1]
+    const ref = useRef()
+
+    const updateCastlingState = ({piece,file,rank}) => {
+        const direction = getCastlingDirections({
+            castleDirection:appState.castleDirection,
