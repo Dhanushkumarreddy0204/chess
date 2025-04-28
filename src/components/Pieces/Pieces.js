@@ -47,5 +47,6 @@ const Pieces = () => {
     const move = e => {
         const {x,y} = calculateCoords(e)
         const [piece,rank,file] = e.dataTransfer.getData("text").split(',')
-
-        
+        if(appState.candidateMoves.find(m => m[0] === x && m[1] === y)){
+            const opponent = piece.startsWith('b') ? 'w' : 'b'
+            const castleDirection = appState.castleDirection[`${piece.startsWith('b') ? 'white' : 'black'}`]
