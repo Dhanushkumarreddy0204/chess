@@ -27,3 +27,7 @@ const Pieces = () => {
             dispatch(updateCastling(direction))
         }
     }
+
+    const openPromotionBox = ({rank,file,x,y}) => {
+        dispatch(openPromotion({
+            rank:Number(rank),
