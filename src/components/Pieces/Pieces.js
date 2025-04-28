@@ -19,3 +19,11 @@ const Pieces = () => {
     const updateCastlingState = ({piece,file,rank}) => {
         const direction = getCastlingDirections({
             castleDirection:appState.castleDirection,
+            piece,
+            file,
+            rank
+        })
+        if (direction){
+            dispatch(updateCastling(direction))
+        }
+    }
