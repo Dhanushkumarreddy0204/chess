@@ -42,4 +42,10 @@ const Pieces = () => {
         const y = Math.floor((e.clientX - left) / size) 
         const x = 7 - Math.floor((e.clientY - top) / size)
 
+        return {x,y}
+    }
+    const move = e => {
+        const {x,y} = calculateCoords(e)
+        const [piece,rank,file] = e.dataTransfer.getData("text").split(',')
+
         
