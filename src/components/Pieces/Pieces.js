@@ -36,3 +36,5 @@ const Pieces = () => {
             y
         }))
     }
+    const calculateCoords = e => {
+        const {top,left,width} = ref.current.getBoundingClientRect()
