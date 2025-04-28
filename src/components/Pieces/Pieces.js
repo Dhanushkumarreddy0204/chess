@@ -38,3 +38,8 @@ const Pieces = () => {
     }
     const calculateCoords = e => {
         const {top,left,width} = ref.current.getBoundingClientRect()
+        const size = width / 8
+        const y = Math.floor((e.clientX - left) / size) 
+        const x = 7 - Math.floor((e.clientY - top) / size)
+
+        
