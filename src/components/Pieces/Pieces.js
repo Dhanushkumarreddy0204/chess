@@ -54,3 +54,6 @@ const Pieces = () => {
                 openPromotionBox({rank,file,x,y})
                 return
             }
+            if (piece.endsWith('r') || piece.endsWith('k')){
+                updateCastlingState({piece,file,rank})
+            }
