@@ -74,4 +74,5 @@ const Pieces = () => {
 
             if (arbiter.insufficientMaterial(newPosition))
                 dispatch(detectInsufficientMaterial())
-            
+            if (arbiter.insufficientMaterial(newPosition))
+                dispatch(detectInsufficientMaterial())
