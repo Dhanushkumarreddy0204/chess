@@ -56,4 +56,9 @@ const Pieces = () => {
             }
             if (piece.endsWith('r') || piece.endsWith('k')){
                 updateCastlingState({piece,file,rank})
-            }
+            } 
+            const newPosition = arbiter.performMove({
+                position:currentPosition,
+                piece,rank,file,
+                x,y
+            })
