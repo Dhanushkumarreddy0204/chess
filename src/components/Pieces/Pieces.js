@@ -70,3 +70,4 @@ const Pieces = () => {
                 y,
                 position:currentPosition,
             })
+            dispatch(makeNewMove({newPosition,newMove}))
