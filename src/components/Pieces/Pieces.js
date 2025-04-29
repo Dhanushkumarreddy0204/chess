@@ -62,3 +62,11 @@ const Pieces = () => {
                 piece,rank,file,
                 x,y
             })
+            const newMove = getNewMoveNotation({
+                piece,
+                rank,
+                file,
+                x,
+                y,
+                position:currentPosition,
+            })
