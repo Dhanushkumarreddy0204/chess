@@ -70,4 +70,8 @@ const Pieces = () => {
                 y,
                 position:currentPosition,
             })
-            dispatch(makeNewMove({newPosition,newMove}))
+            dispatch(makeNewMove({newPosition,newMove}))\
+
+            if (arbiter.insufficientMaterial(newPosition))
+                dispatch(detectInsufficientMaterial())
+            
