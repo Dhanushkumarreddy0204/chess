@@ -88,3 +88,8 @@ const Pieces = () => {
         move (e)
     }
     const onDragOver = e => {e.preventDefault()}
+
+    return <div 
+    className='pieces' 
+    ref={ref} 
+    onDrop={onDrop}
