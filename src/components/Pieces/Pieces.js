@@ -82,3 +82,8 @@ const Pieces = () => {
         }
         dispatch(clearCandidates())
     }
+    const onDrop = e => {
+        e.preventDefault()
+        
+        move (e)
+    }
