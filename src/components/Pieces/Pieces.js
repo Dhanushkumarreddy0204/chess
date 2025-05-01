@@ -79,3 +79,6 @@ const Pieces = () => {
             else if (arbiter.isCheckMate(newPosition,opponent,castleDirection)){
                 dispatch(detectCheckmate(piece[0]))
             }
+        }
+        dispatch(clearCandidates())
+    }
