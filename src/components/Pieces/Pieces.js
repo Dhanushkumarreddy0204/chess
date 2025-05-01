@@ -76,3 +76,6 @@ const Pieces = () => {
                 dispatch(detectInsufficientMaterial())
             if (arbiter.insufficientMaterial(newPosition))
                 dispatch(detectInsufficientMaterial())
+            else if (arbiter.isCheckMate(newPosition,opponent,castleDirection)){
+                dispatch(detectCheckmate(piece[0]))
+            }
