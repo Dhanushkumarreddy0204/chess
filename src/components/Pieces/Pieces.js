@@ -87,3 +87,4 @@ const Pieces = () => {
         
         move (e)
     }
+    const onDragOver = e => {e.preventDefault()}
