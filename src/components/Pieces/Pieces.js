@@ -14,6 +14,7 @@ const Pieces = () => {
 
     const { appState , dispatch } = useAppContext();
     const currentPosition = appState.position[appState.position.length-1]
+
     const ref = useRef()
 
     const updateCastlingState = ({piece,file,rank}) => {
@@ -36,6 +37,7 @@ const Pieces = () => {
             y
         }))
     }
+
     const calculateCoords = e => {
         const {top,left,width} = ref.current.getBoundingClientRect()
         const size = width / 8
@@ -44,19 +46,22 @@ const Pieces = () => {
 
         return {x,y}
     }
+
     const move = e => {
         const {x,y} = calculateCoords(e)
         const [piece,rank,file] = e.dataTransfer.getData("text").split(',')
+
         if(appState.candidateMoves.find(m => m[0] === x && m[1] === y)){
             const opponent = piece.startsWith('b') ? 'w' : 'b'
             const castleDirection = appState.castleDirection[`${piece.startsWith('b') ? 'white' : 'black'}`]
+
             if ((piece==='wp' && x === 7) || (piece==='bp' && x === 0)){
                 openPromotionBox({rank,file,x,y})
                 return
             }
             if (piece.endsWith('r') || piece.endsWith('k')){
                 updateCastlingState({piece,file,rank})
-            } 
+            }
             const newPosition = arbiter.performMove({
                 position:currentPosition,
                 piece,rank,file,
@@ -70,7 +75,7 @@ const Pieces = () => {
                 y,
                 position:currentPosition,
             })
-            dispatch(makeNewMove({newPosition,newMove}))\
+            dispatch(makeNewMove({newPosition,newMove}))
 
             if (arbiter.insufficientMaterial(newPosition))
                 dispatch(detectInsufficientMaterial())
@@ -82,31 +87,33 @@ const Pieces = () => {
         }
         dispatch(clearCandidates())
     }
+
     const onDrop = e => {
         e.preventDefault()
         
         move (e)
     }
+    
     const onDragOver = e => {e.preventDefault()}
 
     return <div 
-    className='pieces' 
-    ref={ref} 
-    onDrop={onDrop}
-    onDragOver={onDragOver} > 
+        className='pieces' 
+        ref={ref} 
+        onDrop={onDrop} 
+        onDragOver={onDragOver} > 
         {currentPosition.map((r,rank) => 
-            r.map((f,file) =>
+            r.map((f,file) => 
                 currentPosition[rank][file]
-                ?   <Piece
-                key={rank+'-'+file} 
-                rank = {rank}
-                file = {file}
-                piece = {currentPosition[rank][file]}
-            />
-        :   null
-    )   
-)}
-</div>
+                ?   <Piece 
+                        key={rank+'-'+file} 
+                        rank = {rank}
+                        file = {file}
+                        piece = {currentPosition[rank][file]}
+                    />
+                :   null
+            )   
+        )}
+    </div>
 }
 
 export default Pieces
