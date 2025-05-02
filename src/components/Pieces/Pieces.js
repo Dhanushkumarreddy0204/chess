@@ -100,3 +100,13 @@ const Pieces = () => {
                 ?   <Piece
                 key={rank+'-'+file} 
                 rank = {rank}
+                file = {file}
+                piece = {currentPosition[rank][file]}
+            />
+        :   null
+    )   
+)}
+</div>
+}
+
+export default Pieces
