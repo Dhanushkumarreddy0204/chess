@@ -1,3 +1,6 @@
 .wins {
     height: var(--tile-size);
     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
