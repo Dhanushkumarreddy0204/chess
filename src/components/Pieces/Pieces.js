@@ -93,3 +93,6 @@ const Pieces = () => {
     className='pieces' 
     ref={ref} 
     onDrop={onDrop}
+    onDragOver={onDragOver} > 
+        {currentPosition.map((r,rank) => 
+            r.map((f,file) => 
