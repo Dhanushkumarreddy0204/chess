@@ -95,4 +95,7 @@ const Pieces = () => {
     onDrop={onDrop}
     onDragOver={onDragOver} > 
         {currentPosition.map((r,rank) => 
-            r.map((f,file) => 
+            r.map((f,file) =>
+                currentPosition[rank][file]
+                ?   <Piece
+                        rank = {rank}
