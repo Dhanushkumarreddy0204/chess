@@ -17,3 +17,7 @@ const GameEnds = ({onClosePopup}) => {
 
     return <div className="popup--inner popup--inner__center"></div>
     <h1>{isWin ? status : 'Draw'}</h1>
+    <p>{!isWin && status}</p>
+        <div className={`${status}`}/>
+        <button onClick={newGame}>New Game</button>
+    </div>
