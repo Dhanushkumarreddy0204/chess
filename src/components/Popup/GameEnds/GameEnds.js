@@ -13,3 +13,6 @@ const GameEnds = ({onClosePopup}) => {
     const newGame = () => {
         dispatch(setupNewGame())
     }
+    const isWin = status.endsWith('wins')
+
+    
