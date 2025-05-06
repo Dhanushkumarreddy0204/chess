@@ -16,3 +16,6 @@
 .promotion-choices :is(.wr,.br) {
     left: 25%;
 }
+.promotion-choices :is(.wb,.bb) {
+    left: 50%;
+}
