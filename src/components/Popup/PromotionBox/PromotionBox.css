@@ -19,3 +19,8 @@
 .promotion-choices :is(.wb,.bb) {
     left: 50%;
 }
+
+
+.promotion-choices :is(.wn,.bn) {
+    left: 75%;
+}
