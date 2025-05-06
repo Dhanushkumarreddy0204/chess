@@ -13,3 +13,6 @@
 .promotion-choices :is(.wq,.bq) {
     left: 0;
 }
+.promotion-choices :is(.wr,.br) {
+    left: 25%;
+}
