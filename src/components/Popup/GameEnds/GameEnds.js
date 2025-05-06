@@ -21,3 +21,7 @@ const GameEnds = ({onClosePopup}) => {
         <div className={`${status}`}/>
         <button onClick={newGame}>New Game</button>
     </div>
+       
+}
+
+export default GameEnds
