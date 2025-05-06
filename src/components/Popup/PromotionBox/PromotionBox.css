@@ -10,3 +10,6 @@
     box-shadow: 0 0 0 5px var(--dark-tile) inset;
     transform: scale(1.05);
 }
+.promotion-choices :is(.wq,.bq) {
+    left: 0;
+}
