@@ -8,3 +8,7 @@ const PromotionBox = ({ onClosePopup }) => {
     const { promotionSquare } = appState;
 
     if (!promotionSquare) return null;
+
+    
+  const color = promotionSquare.x === 7 ? "w" : "b";
+  const options = ["q", "r", "b", "n"];
