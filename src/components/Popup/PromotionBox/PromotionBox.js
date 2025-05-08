@@ -23,4 +23,6 @@ const PromotionBox = ({ onClosePopup }) => {
 
     if (promotionSquare.y <= 1) {
       style.left = "0%";
-    } 
+    } else if (promotionSquare.y >= 5) {
+      style.right = "0%";
+    }
