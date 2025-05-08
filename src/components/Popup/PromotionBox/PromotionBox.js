@@ -12,3 +12,8 @@ const PromotionBox = ({ onClosePopup }) => {
     
   const color = promotionSquare.x === 7 ? "w" : "b";
   const options = ["q", "r", "b", "n"];
+
+  const getPromotionBoxPosition = () => {
+    let style = {};
+
+    
