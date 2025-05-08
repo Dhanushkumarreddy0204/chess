@@ -15,5 +15,6 @@ const PromotionBox = ({ onClosePopup }) => {
 
   const getPromotionBoxPosition = () => {
     let style = {};
-
-    
+    if (promotionSquare.x === 7) {
+      style.top = "-12.5%";
+    } 
