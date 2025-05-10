@@ -47,3 +47,9 @@ const PromotionBox = ({ onClosePopup }) => {
       promotesTo: option,
       piece: promotionSquare.x === 7 ? "wp" : "bp",
     });
+    dispatch(clearCandidates());
+
+    dispatch(makeNewMove({ newPosition, newMove }));
+  };
+
+  
