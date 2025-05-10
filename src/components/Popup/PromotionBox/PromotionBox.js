@@ -39,3 +39,6 @@ const PromotionBox = ({ onClosePopup }) => {
     );
 
     newPosition[promotionSquare.rank][promotionSquare.file] = "";
+    newPosition[promotionSquare.x][promotionSquare.y] = color + option;
+
+    
