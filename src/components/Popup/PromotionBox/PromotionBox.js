@@ -41,4 +41,6 @@ const PromotionBox = ({ onClosePopup }) => {
     newPosition[promotionSquare.rank][promotionSquare.file] = "";
     newPosition[promotionSquare.x][promotionSquare.y] = color + option;
 
-    
+     const newMove = getNewMoveNotation({
+      ...promotionSquare,
+      position: appState.position[appState.position.length - 1],
