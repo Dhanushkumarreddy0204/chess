@@ -30,3 +30,7 @@ const PromotionBox = ({ onClosePopup }) => {
     }
     return style;
   };
+
+
+  const onClick = (option) => {
+    onClosePopup();
