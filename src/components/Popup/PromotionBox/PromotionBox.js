@@ -52,4 +52,4 @@ const PromotionBox = ({ onClosePopup }) => {
     dispatch(makeNewMove({ newPosition, newMove }));
   };
 
-  
+  return 
