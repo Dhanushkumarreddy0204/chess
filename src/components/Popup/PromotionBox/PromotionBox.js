@@ -28,3 +28,5 @@ const PromotionBox = ({ onClosePopup }) => {
     }else {
       style.left = `${12.5 * promotionSquare.y - 20}%`;
     }
+    return style;
+  };
