@@ -38,4 +38,4 @@ const PromotionBox = ({ onClosePopup }) => {
       appState.position[appState.position.length - 1]
     );
 
-    
+    newPosition[promotionSquare.rank][promotionSquare.file] = "";
