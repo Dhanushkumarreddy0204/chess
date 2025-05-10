@@ -44,3 +44,6 @@ const PromotionBox = ({ onClosePopup }) => {
      const newMove = getNewMoveNotation({
       ...promotionSquare,
       position: appState.position[appState.position.length - 1],
+      promotesTo: option,
+      piece: promotionSquare.x === 7 ? "wp" : "bp",
+    });
