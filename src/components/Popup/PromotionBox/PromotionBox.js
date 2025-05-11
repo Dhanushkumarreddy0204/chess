@@ -57,3 +57,4 @@ const PromotionBox = ({ onClosePopup }) => {
       className="popup--inner promotion-choices"
       style={getPromotionBoxPosition()}
     >
+      {options.map((option) => 
