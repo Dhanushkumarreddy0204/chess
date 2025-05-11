@@ -4,17 +4,17 @@ import { makeNewMove, clearCandidates } from "../../../reducer/actions/move";
 import "./PromotionBox.css";
 
 const PromotionBox = ({ onClosePopup }) => {
-    const { appState, dispatch } = useAppContext();
-    const { promotionSquare } = appState;
+  const { appState, dispatch } = useAppContext();
+  const { promotionSquare } = appState;
 
-    if (!promotionSquare) return null;
+  if (!promotionSquare) return null;
 
-    
   const color = promotionSquare.x === 7 ? "w" : "b";
   const options = ["q", "r", "b", "n"];
 
   const getPromotionBoxPosition = () => {
     let style = {};
+
     if (promotionSquare.x === 7) {
       style.top = "-12.5%";
     } else {
@@ -25,12 +25,12 @@ const PromotionBox = ({ onClosePopup }) => {
       style.left = "0%";
     } else if (promotionSquare.y >= 5) {
       style.right = "0%";
-    }else {
+    } else {
       style.left = `${12.5 * promotionSquare.y - 20}%`;
     }
+
     return style;
   };
-
 
   const onClick = (option) => {
     onClosePopup();
@@ -41,7 +41,7 @@ const PromotionBox = ({ onClosePopup }) => {
     newPosition[promotionSquare.rank][promotionSquare.file] = "";
     newPosition[promotionSquare.x][promotionSquare.y] = color + option;
 
-     const newMove = getNewMoveNotation({
+    const newMove = getNewMoveNotation({
       ...promotionSquare,
       position: appState.position[appState.position.length - 1],
       promotesTo: option,
@@ -59,7 +59,8 @@ const PromotionBox = ({ onClosePopup }) => {
     >
       {options.map((option) => (
         <div
-          key={option}onClick={() => onClick(option)}
+          key={option}
+          onClick={() => onClick(option)}
           className={`piece ${color}${option}`}
         />
       ))}
