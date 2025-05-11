@@ -59,4 +59,12 @@ const PromotionBox = ({ onClosePopup }) => {
     >
       {options.map((option) => (
         <div
-          key={option}
+          key={option}onClick={() => onClick(option)}
+          className={`piece ${color}${option}`}
+        />
+      ))}
+    </div>
+  );
+};
+
+export default PromotionBox;
