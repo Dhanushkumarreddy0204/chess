@@ -52,4 +52,7 @@ const PromotionBox = ({ onClosePopup }) => {
     dispatch(makeNewMove({ newPosition, newMove }));
   };
 
-  return 
+  return <div
+      className="popup--inner promotion-choices"
+      style={getPromotionBoxPosition()}
+    >
