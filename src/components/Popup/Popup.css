@@ -9,3 +9,6 @@
 .popup--inner {
     width: 50%;
     min-height: 12.5%;
+    background: var(--light-tile);
+    position: absolute;
+    border: 8px solid var(--light-tile);
