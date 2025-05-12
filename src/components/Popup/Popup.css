@@ -6,3 +6,6 @@
     bottom: calc(.25*var(--tile-size));
     background: var(--highlight);
 }
+.popup--inner {
+    width: 50%;
+    min-height: 12.5%;
