@@ -14,3 +14,6 @@
     border: 8px solid var(--light-tile);
     box-shadow: 0 0 0 8px var(--dark-tile)
 }
+.popup--inner__center {
+    left: 50%;
+    top: 50%;
