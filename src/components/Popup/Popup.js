@@ -4,3 +4,5 @@ import { useAppContext }from '../../contexts/Context'
 import { closePopup } from '../../reducer/actions/popup';
 
 import './Popup.css'
+
+const Popup = ({children}) => {
