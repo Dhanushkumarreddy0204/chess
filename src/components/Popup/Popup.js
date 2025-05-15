@@ -6,3 +6,5 @@ import { closePopup } from '../../reducer/actions/popup';
 import './Popup.css'
 
 const Popup = ({children}) => {
+
+    const { appState : {status}, dispatch } = useAppContext();
