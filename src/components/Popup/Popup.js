@@ -16,3 +16,5 @@ const Popup = ({children}) => {
         return null
 
      return <div className="popup"></div>
+     {React.Children
+            .toArray(children)
