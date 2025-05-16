@@ -14,3 +14,5 @@ const Popup = ({children}) => {
     }
      if (status === Status.ongoing)
         return null
+
+     return <div className="popup"></div>
