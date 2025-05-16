@@ -13,4 +13,4 @@ const Popup = ({children}) => {
         dispatch(closePopup())
     }
      if (status === Status.ongoing)
-        
+        return null
