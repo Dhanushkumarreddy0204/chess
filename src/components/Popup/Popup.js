@@ -8,3 +8,7 @@ import './Popup.css'
 const Popup = ({children}) => {
 
     const { appState : {status}, dispatch } = useAppContext();
+
+     const onClosePopup = () => {
+        dispatch(closePopup())
+    }
