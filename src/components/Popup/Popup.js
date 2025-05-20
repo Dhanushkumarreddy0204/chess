@@ -18,3 +18,4 @@ const Popup = ({children}) => {
      return <div className="popup"></div>
      {React.Children
             .toArray(children)
+             .map (child =>
