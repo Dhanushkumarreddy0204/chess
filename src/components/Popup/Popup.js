@@ -18,4 +18,5 @@ const Popup = ({children}) => {
      return <div className="popup"></div>
      {React.Children
             .toArray(children)
-             .map (child =>React.cloneElement(
+             .map (child =>React.cloneElement(child, { onClosePopup }))}
+      
