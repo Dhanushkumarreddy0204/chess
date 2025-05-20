@@ -9,15 +9,18 @@ const Popup = ({children}) => {
 
     const { appState : {status}, dispatch } = useAppContext();
 
-     const onClosePopup = () => {
+    const onClosePopup = () => {
         dispatch(closePopup())
     }
-     if (status === Status.ongoing)
+
+    if (status === Status.ongoing)
         return null
 
-     return <div className="popup"></div>
-     {React.Children
+    return <div className="popup">
+        {React.Children
             .toArray(children)
-             .map (child =>React.cloneElement(child, { onClosePopup }))}
-      </div>
+            .map (child => React.cloneElement(child, { onClosePopup }))}
+    </div>
 }
+
+export default Popup
