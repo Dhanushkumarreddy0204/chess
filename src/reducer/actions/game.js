@@ -8,4 +8,8 @@ export const updateCastling = (direction) => {
     }
 }
 
-export const detectStalemate = () => 
+export const detectStalemate = () => {
+    return {
+        type: actionTypes.STALEMATE,
+    }
+}
