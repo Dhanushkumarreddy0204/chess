@@ -7,3 +7,5 @@ export const updateCastling = (direction) => {
         payload: direction,
     }
 }
+
+export const detectStalemate = () => 
