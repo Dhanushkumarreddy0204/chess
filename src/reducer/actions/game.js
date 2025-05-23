@@ -19,3 +19,4 @@ export const detectInsufficientMaterial = () => {
         type: actionTypes.INSUFFICIENT_MATERIAL,
     }
 }
+export const detectCheckmate = winner =>
