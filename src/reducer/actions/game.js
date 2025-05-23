@@ -13,3 +13,5 @@ export const detectStalemate = () => {
         type: actionTypes.STALEMATE,
     }
 }
+
+export const detectInsufficientMaterial = () 
