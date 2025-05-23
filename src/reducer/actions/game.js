@@ -14,4 +14,6 @@ export const detectStalemate = () => {
     }
 }
 
-export const detectInsufficientMaterial = () 
+export const detectInsufficientMaterial = () => {
+    return {
+        
