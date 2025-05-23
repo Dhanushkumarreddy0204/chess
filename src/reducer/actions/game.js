@@ -16,4 +16,6 @@ export const detectStalemate = () => {
 
 export const detectInsufficientMaterial = () => {
     return {
-        
+        type: actionTypes.INSUFFICIENT_MATERIAL,
+    }
+}
