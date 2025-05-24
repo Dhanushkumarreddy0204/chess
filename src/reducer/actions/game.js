@@ -19,13 +19,17 @@ export const detectInsufficientMaterial = () => {
         type: actionTypes.INSUFFICIENT_MATERIAL,
     }
 }
+
 export const detectCheckmate = winner => {
     return {
         type: actionTypes.WIN,
         payload : winner
     }
 }
+
 export const setupNewGame = () => {
     return {
         type: actionTypes.NEW_GAME,
         payload : initGameState
+    }
+}
