@@ -25,4 +25,5 @@ export const detectCheckmate = winner => {
         payload : winner
     }
 }
-export const setupNewGame 
+export const setupNewGame = () => {
+    return {
