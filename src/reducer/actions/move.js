@@ -6,3 +6,5 @@ export const makeNewMove = ({newPosition,newMove}) => {
         payload: {newPosition,newMove},
     }
 }
+
+export const clearCandidates = () =>
