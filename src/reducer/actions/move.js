@@ -1,3 +1,8 @@
 import actionTypes from '../actionTypes';
 
-export const makeNewMove = ({newPosition,newMove}) => 
+export const makeNewMove = ({newPosition,newMove}) => {
+    return {
+        type: actionTypes.NEW_MOVE,
+        payload: {newPosition,newMove},
+    }
+}
