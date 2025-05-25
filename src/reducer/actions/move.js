@@ -7,4 +7,8 @@ export const makeNewMove = ({newPosition,newMove}) => {
     }
 }
 
-export const clearCandidates = () =>
+export const clearCandidates = () => {
+    return {
+        type: actionTypes.CLEAR_CANDIDATE_MOVES,
+    }
+}
