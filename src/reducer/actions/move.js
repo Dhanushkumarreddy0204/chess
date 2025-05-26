@@ -19,3 +19,4 @@ export const generateCandidates = ({candidateMoves})=> {
         payload : {candidateMoves}
     }
 }
+export const takeBack = () => 
