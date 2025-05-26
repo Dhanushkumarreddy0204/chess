@@ -19,4 +19,8 @@ export const generateCandidates = ({candidateMoves})=> {
         payload : {candidateMoves}
     }
 }
-export const takeBack = () => 
+export const takeBack = () => {
+    return {
+        type: actionTypes.TAKE_BACK,
+    }
+}
