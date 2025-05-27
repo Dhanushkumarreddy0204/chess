@@ -1,2 +1,3 @@
 import actionTypes from '../actionTypes';
-export const openPromotion = ({rank,file,x,y}) =>
+export const openPromotion = ({rank,file,x,y}) =>{
+    return {
