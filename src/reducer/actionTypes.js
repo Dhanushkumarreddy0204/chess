@@ -1,3 +1,4 @@
 const actionTypes = {
     "CAN_CASTLE" : "CAN_CASTLE",
+    "CLEAR_CANDIDATE_MOVES" : "CLEAR_CANDIDATE_MOVES",
 }
