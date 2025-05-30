@@ -6,5 +6,5 @@ const actionTypes = {
     "NEW_GAME" : "NEW_GAME",
     "PROMOTION_CLOSE" : "PROMOTION_CLOSE",
     "PROMOTION_OPEN" : "PROMOTION_OPEN",
-    
+    "STALEMATE" : "STALEMATE",
 }
