@@ -8,4 +8,5 @@ const actionTypes = {
     "PROMOTION_OPEN" : "PROMOTION_OPEN",
     "STALEMATE" : "STALEMATE",
     "INSUFFICIENT_MATERIAL" : "INSUFFICIENT_MATERIAL",
+    "WIN" : "WIN",
 }
