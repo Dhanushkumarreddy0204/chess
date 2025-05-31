@@ -11,3 +11,5 @@ const actionTypes = {
     "WIN" : "WIN",
     "TAKE_BACK" : "TAKE_BACK"
 }
+
+export default actionTypes
