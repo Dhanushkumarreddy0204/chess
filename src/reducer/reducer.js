@@ -21,3 +21,4 @@ export const reducer = (state, action) => {
                 turn,
             }
         }
+        case actionTypes.GENERATE_CANDIDATE_MOVES :
