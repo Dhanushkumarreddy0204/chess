@@ -14,3 +14,6 @@ export const reducer = (state, action) => {
                 action.payload.newMove
             ]
             turn = turn === 'w' ? 'b' : 'w'
+            return {
+                ...state,
+                position,
