@@ -13,4 +13,4 @@ export const reducer = (state, action) => {
                 ...movesList,
                 action.payload.newMove
             ]
-            
+            turn = turn === 'w' ? 'b' : 'w'
