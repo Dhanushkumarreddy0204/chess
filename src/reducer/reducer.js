@@ -9,3 +9,8 @@ export const reducer = (state, action) => {
                 ...position,
                 action.payload.newPosition
             ]
+            movesList = [
+                ...movesList,
+                action.payload.newMove
+            ]
+            
