@@ -21,4 +21,5 @@ export const reducer = (state, action) => {
                 turn,
             }
         }
-        case actionTypes.GENERATE_CANDIDATE_MOVES :
+        case actionTypes.GENERATE_CANDIDATE_MOVES : {
+            const {candidateMoves} = action.payload
