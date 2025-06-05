@@ -34,4 +34,7 @@ export const reducer = (state, action) => {
                 candidateMoves : []
             }
         }
-        case actionTypes.PROMOTION_OPEN :
+        case actionTypes.PROMOTION_OPEN : {
+            return {
+                ...state,
+                
