@@ -37,4 +37,7 @@ export const reducer = (state, action) => {
         case actionTypes.PROMOTION_OPEN : {
             return {
                 ...state,
-                
+                status : Status.promoting,
+                promotionSquare : {...action.payload},
+            }
+        }
