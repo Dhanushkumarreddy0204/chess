@@ -41,3 +41,4 @@ export const reducer = (state, action) => {
                 promotionSquare : {...action.payload},
             }
         }
+        case actionTypes.PROMOTION_CLOSE : 
