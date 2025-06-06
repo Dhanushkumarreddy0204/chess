@@ -48,3 +48,4 @@ export const reducer = (state, action) => {
                 promotionSquare : null,
             }
         }
+        case actionTypes.CAN_CASTLE : 
