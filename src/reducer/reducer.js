@@ -44,3 +44,7 @@ export const reducer = (state, action) => {
         case actionTypes.PROMOTION_CLOSE : {
             return {
                 ...state,
+                status : Status.ongoing,
+                promotionSquare : null,
+            }
+        }
