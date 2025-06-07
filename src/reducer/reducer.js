@@ -52,4 +52,8 @@ export const reducer = (state, action) => {
             let {turn,castleDirection} = state 
             castleDirection[turn] = action.payload
 
-            return
+            return {
+                ...state,
+                castleDirection,
+            }
+        }
