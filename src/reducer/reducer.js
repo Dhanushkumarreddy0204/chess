@@ -57,3 +57,5 @@ export const reducer = (state, action) => {
                 castleDirection,
             }
         }
+
+        case actionTypes.STALEMATE :
