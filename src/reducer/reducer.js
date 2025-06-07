@@ -58,4 +58,5 @@ export const reducer = (state, action) => {
             }
         }
 
-        case actionTypes.STALEMATE :
+        case actionTypes.STALEMATE :  {
+            return {
