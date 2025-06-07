@@ -64,3 +64,4 @@ export const reducer = (state, action) => {
                 status : Status.stalemate
             }
         }
+        case actionTypes.INSUFFICIENT_MATERIAL :
