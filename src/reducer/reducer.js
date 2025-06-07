@@ -60,3 +60,7 @@ export const reducer = (state, action) => {
 
         case actionTypes.STALEMATE :  {
             return {
+                ...state,
+                status : Status.stalemate
+            }
+        }
