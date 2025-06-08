@@ -71,4 +71,6 @@ export const reducer = (state, action) => {
             }
         }
 
-        case actionTypes.WIN : 
+        case actionTypes.WIN : {
+            return {
+                ...state,
