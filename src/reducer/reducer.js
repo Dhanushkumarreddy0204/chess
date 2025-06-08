@@ -70,3 +70,5 @@ export const reducer = (state, action) => {
                 status : Status.insufficient
             }
         }
+
+        case actionTypes.WIN : 
