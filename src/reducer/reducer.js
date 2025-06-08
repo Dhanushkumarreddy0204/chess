@@ -67,3 +67,6 @@ export const reducer = (state, action) => {
         case actionTypes.INSUFFICIENT_MATERIAL : {
             return {
                 ...state,
+                status : Status.insufficient
+            }
+        }
