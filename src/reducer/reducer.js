@@ -82,4 +82,6 @@ export const reducer = (state, action) => {
                 ...action.payload,
             }
         }
-        case actionTypes.TAKE_BACK :
+        case actionTypes.TAKE_BACK : {
+            let {position,movesList,turn} = state 
+            if (position.length > 1){
