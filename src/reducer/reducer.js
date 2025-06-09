@@ -77,3 +77,4 @@ export const reducer = (state, action) => {
                 status : action.payload === 'w' ? Status.white : Status.black
             }
         }
+        case actionTypes.NEW_GAME :
