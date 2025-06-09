@@ -82,3 +82,4 @@ export const reducer = (state, action) => {
                 ...action.payload,
             }
         }
+        case actionTypes.TAKE_BACK :
