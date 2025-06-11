@@ -97,3 +97,4 @@ export const reducer = (state, action) => {
                 turn,
             }
         }
+        default : 
