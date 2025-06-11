@@ -89,3 +89,7 @@ export const reducer = (state, action) => {
                 movesList = movesList.slice(0,movesList.length-1)
                 turn = turn === 'w' ? 'b' : 'w'
             }
+
+            return {
+                ...state,
+                position,
