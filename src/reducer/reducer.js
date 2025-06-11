@@ -93,3 +93,7 @@ export const reducer = (state, action) => {
             return {
                 ...state,
                 position,
+                movesList,
+                turn,
+            }
+        }
