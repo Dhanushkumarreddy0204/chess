@@ -14,6 +14,7 @@ export const reducer = (state, action) => {
                 action.payload.newMove
             ]
             turn = turn === 'w' ? 'b' : 'w'
+
             return {
                 ...state,
                 position,
@@ -21,6 +22,7 @@ export const reducer = (state, action) => {
                 turn,
             }
         }
+
         case actionTypes.GENERATE_CANDIDATE_MOVES : {
             const {candidateMoves} = action.payload
             return {
@@ -28,12 +30,14 @@ export const reducer = (state, action) => {
                 candidateMoves
             }
         } 
+
         case actionTypes.CLEAR_CANDIDATE_MOVES : {
             return {
                 ...state,
                 candidateMoves : []
             }
         }
+    
         case actionTypes.PROMOTION_OPEN : {
             return {
                 ...state,
@@ -41,6 +45,7 @@ export const reducer = (state, action) => {
                 promotionSquare : {...action.payload},
             }
         }
+
         case actionTypes.PROMOTION_CLOSE : {
             return {
                 ...state,
@@ -48,22 +53,25 @@ export const reducer = (state, action) => {
                 promotionSquare : null,
             }
         }
+
         case actionTypes.CAN_CASTLE : {
             let {turn,castleDirection} = state 
+        
             castleDirection[turn] = action.payload
-
+            
             return {
                 ...state,
                 castleDirection,
             }
         }
-
-        case actionTypes.STALEMATE :  {
+        
+        case actionTypes.STALEMATE : {
             return {
                 ...state,
                 status : Status.stalemate
             }
         }
+
         case actionTypes.INSUFFICIENT_MATERIAL : {
             return {
                 ...state,
@@ -77,11 +85,13 @@ export const reducer = (state, action) => {
                 status : action.payload === 'w' ? Status.white : Status.black
             }
         }
+         
         case actionTypes.NEW_GAME : {
             return {
                 ...action.payload,
             }
         }
+
         case actionTypes.TAKE_BACK : {
             let {position,movesList,turn} = state 
             if (position.length > 1){
@@ -97,7 +107,8 @@ export const reducer = (state, action) => {
                 turn,
             }
         }
+
         default : 
-        return state
+            return state
     }
 };
