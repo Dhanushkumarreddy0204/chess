@@ -17,3 +17,5 @@ html,body {
 }
 button {
   background: var(--dark-tile);
+  color: var(--light-tile);
+  border: 0 none;
