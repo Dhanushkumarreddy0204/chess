@@ -20,3 +20,5 @@ button {
   color: var(--light-tile);
   border: 0 none;
   padding: 10px 30px;
+
+  margin: 10px 0;
