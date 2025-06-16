@@ -6,3 +6,4 @@ import { initGameState } from './constants';
 import AppContext from './contexts/Context'
 import Control from './components/Control/Control';
 import TakeBack from './components/Control/bits/TakeBack';
+import MovesList from './components/Control/bits/MovesList';
