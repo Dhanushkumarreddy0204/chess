@@ -11,3 +11,5 @@ import MovesList from './components/Control/bits/MovesList';
 function App() {
 
     const [appState, dispatch ] = useReducer(reducer,initGameState);
+
+    const providerState = 
