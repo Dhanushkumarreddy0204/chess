@@ -16,3 +16,6 @@ function App() {
         appState,
         dispatch
     }
+
+    return (
+        <AppContext.Provider value={providerState} ></AppContext.Provider>
