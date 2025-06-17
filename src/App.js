@@ -12,4 +12,7 @@ function App() {
 
     const [appState, dispatch ] = useReducer(reducer,initGameState);
 
-    const providerState = 
+    const providerState = {
+        appState,
+        dispatch
+    }
