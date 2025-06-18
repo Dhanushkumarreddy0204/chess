@@ -25,4 +25,4 @@ function App() {
                     <MovesList/>
                     <TakeBack/>
                 </Control>
-                
+                </div>
