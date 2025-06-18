@@ -27,3 +27,5 @@ function App() {
                 </Control>
                 </div>
                 </AppContext.Provider>
+                ); 
+}
