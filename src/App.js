@@ -26,3 +26,4 @@ function App() {
                     <TakeBack/>
                 </Control>
                 </div>
+                </AppContext.Provider>
