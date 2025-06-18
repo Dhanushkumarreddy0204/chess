@@ -20,3 +20,9 @@ function App() {
     return (
         <AppContext.Provider value={providerState} ></AppContext.Provider>
             <div className="App"></div>
+            <Board/>
+                <Control>
+                    <MovesList/>
+                    <TakeBack/>
+                </Control>
+                
