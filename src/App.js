@@ -18,14 +18,16 @@ function App() {
     }
 
     return (
-        <AppContext.Provider value={providerState} ></AppContext.Provider>
-            <div className="App"></div>
-            <Board/>
+        <AppContext.Provider value={providerState} >
+            <div className="App">
+                <Board/>
                 <Control>
                     <MovesList/>
                     <TakeBack/>
                 </Control>
-                </div>
-                </AppContext.Provider>
-                ); 
+            </div>
+        </AppContext.Provider>
+    ); 
 }
+
+export default App;
