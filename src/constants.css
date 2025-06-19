@@ -7,4 +7,4 @@
     --check : #FEEC48;
 }
 
-@media all
+@media all and (max-width: 450px) 
