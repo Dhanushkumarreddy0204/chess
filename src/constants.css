@@ -1,2 +1,4 @@
 :root {
     --tile-size : 100px;
+    --light-tile : #F0D8B6;
+    --dark-tile : #B48764;
