@@ -5,3 +5,5 @@ export const Status = {
     'white' : 'White wins',
     'black' : 'Black wins',
     'stalemate' : 'Game draws due to stalemate',
+    'insufficient' : 'Game draws due to insufficient material',
+}
