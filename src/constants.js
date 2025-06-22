@@ -8,4 +8,6 @@ export const Status = {
     'insufficient' : 'Game draws due to insufficient material',
 }
 
-export const initGameState =
+export const initGameState = {
+    position : [createPosition()],
+    turn : 'w',
