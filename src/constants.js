@@ -1,4 +1,5 @@
 import { createPosition } from './helper'
+
 export const Status = {
     'ongoing' : 'Ongoing',
     'promoting' : 'Promoting',
@@ -13,5 +14,11 @@ export const initGameState = {
     turn : 'w',
     candidateMoves : [],
     movesList : [],
+
     promotionSquare : null,
     status : Status.ongoing,
+    castleDirection : {
+        w : 'both',
+        b : 'both'
+    }, 
+}
