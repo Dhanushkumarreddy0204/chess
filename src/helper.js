@@ -8,3 +8,6 @@ export const createPosition = () => {
 
   position[0][0] = "wr";
   position[0][1] = "wn";
+  position[0][2] = "wb";
+  position[0][3] = "wq";
+  
