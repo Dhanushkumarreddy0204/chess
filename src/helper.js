@@ -6,4 +6,5 @@ export const createPosition = () => {
     position[1][i] = "wp";
   }
 
-  
+  position[0][0] = "wr";
+  position[0][1] = "wn";
