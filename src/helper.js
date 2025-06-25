@@ -14,3 +14,4 @@ export const createPosition = () => {
   position[0][5] = "wb";
   position[0][6] = "wn";
   position[0][7] = "wr";
+  position[7][0] = "br";
