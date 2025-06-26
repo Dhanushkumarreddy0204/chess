@@ -21,4 +21,7 @@ export const createPosition = () => {
   position[7][4] = "bk";
   position[7][5] = "bb";
   position[7][6] = "bn";
-  
+  position[7][7] = "br";
+
+  return position;
+};
