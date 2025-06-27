@@ -42,3 +42,6 @@ export const areSameColorTiles = (coords1, coords2) =>
 export const findPieceCoords = (position, type) => {
   let results = [];
   position.forEach((rank, i) => {
+    rank.forEach((pos, j) => {
+      if (pos === type) results.push({ x: i, y: j });
+    });
