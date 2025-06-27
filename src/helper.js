@@ -36,3 +36,4 @@ export const copyPosition = (position) => {
 
   return newPosition;
 };
+export const areSameColorTiles = (coords1, coords2) =>
