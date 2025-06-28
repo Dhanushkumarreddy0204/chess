@@ -58,3 +58,4 @@ export const getNewMoveNotation = ({
   position,
   promotesTo,
 }) => {
+  let note = "";
