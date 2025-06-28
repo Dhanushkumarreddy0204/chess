@@ -45,3 +45,6 @@ export const findPieceCoords = (position, type) => {
     rank.forEach((pos, j) => {
       if (pos === type) results.push({ x: i, y: j });
     });
+    });
+  return results;
+};
