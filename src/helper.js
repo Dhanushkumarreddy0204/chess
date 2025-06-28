@@ -52,3 +52,6 @@ export const findPieceCoords = (position, type) => {
 export const getNewMoveNotation = ({
   piece,
   rank,
+  file,
+  x,
+  y,
