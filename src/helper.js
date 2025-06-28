@@ -48,3 +48,7 @@ export const findPieceCoords = (position, type) => {
     });
   return results;
 };
+
+export const getNewMoveNotation = ({
+  piece,
+  rank,
