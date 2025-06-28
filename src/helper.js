@@ -55,3 +55,6 @@ export const getNewMoveNotation = ({
   file,
   x,
   y,
+  position,
+  promotesTo,
+}) => {
