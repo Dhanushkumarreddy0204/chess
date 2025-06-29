@@ -66,4 +66,5 @@ export const getNewMoveNotation = ({
     if (file < y) return "O-O";
     else return "O-O-O";
   }
-   if (piece[1] !== "p")
+   if (piece[1] !== "p") {
+    note += piece[1].toUpperCase();
