@@ -62,4 +62,7 @@ export const getNewMoveNotation = ({
   
   rank = Number(rank);
   file = Number(file);
-  if (piece[1] === "k" && Math.abs(file - y) === 2)
+  if (piece[1] === "k" && Math.abs(file - y) === 2) {
+    if (file < y) return "O-O";
+    else return "O-O-O";
+  }
