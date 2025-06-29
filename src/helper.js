@@ -59,3 +59,6 @@ export const getNewMoveNotation = ({
   promotesTo,
 }) => {
   let note = "";
+  
+  rank = Number(rank);
+  file = Number(file);
