@@ -71,3 +71,6 @@ export const getNewMoveNotation = ({
     if (position[x][y]) {
       note += "x";
     }
+    } else if (rank !== x && file !== y) {
+    note += getCharacter(file + 1) + "x";
+  }
