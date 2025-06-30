@@ -68,3 +68,6 @@ export const getNewMoveNotation = ({
   }
    if (piece[1] !== "p") {
     note += piece[1].toUpperCase();
+    if (position[x][y]) {
+      note += "x";
+    }
