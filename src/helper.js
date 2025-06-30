@@ -74,3 +74,4 @@ export const getNewMoveNotation = ({
     } else if (rank !== x && file !== y) {
     note += getCharacter(file + 1) + "x";
   }
+  note += getCharacter(y + 1) + (x + 1);
