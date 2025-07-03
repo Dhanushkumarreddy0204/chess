@@ -1,4 +1,4 @@
-import './App.css';
+import './app.css';
 import Board from './components/Board/Board';
 import { reducer } from './reducer/reducer'
 import { useReducer } from 'react'
