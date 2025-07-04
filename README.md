@@ -37,7 +37,6 @@ This project reimagines the classic two-player chess experience by combining ele
 <p align="center">
   <img src="/chess/img/Screenshot 2025-07-04 095005.png" alt="Login Page" width="600"/>
 </p>
-
 ---
 
 ## 🚀 Getting Started
