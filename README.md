@@ -30,11 +30,7 @@ This project reimagines the classic two-player chess experience by combining ele
 ## 📸 Screenshots
 
 
-<<<<<<< HEAD
 <img src="/chess/src/assets/wb.png" alt="Chess Game UI" width="600"/>
-=======
-<img src="public/Screenshot_2025-07-04_095023.png" alt="Chess Game UI" width="600"/>
->>>>>>> 727583282a1ddfe4dc7d654e8c7c42ca5f315704
 
 <img src="/chess/public/Screenshot 2025-07-04 095005.png" alt="Login Page" width="600"/>
 
