@@ -17,7 +17,7 @@ Welcome to the **Interactive Chess Game** — a lightweight and responsive two-p
 
 ---
 
-<h1>game image complet board in public folder </h1>
+<h1>game image complet board in public/Screenshot 2025-07-04 095023.png</h1>
 
 ---
 
