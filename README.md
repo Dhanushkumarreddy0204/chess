@@ -3,7 +3,7 @@
 Welcome to the **Interactive Chess Game** — a lightweight and responsive two-player chess game built entirely with **React**, **JavaScript**, and **CSS**. It’s simple, fast, and designed for fun local play on desktop and mobile devices.
 
 <h1>game image login in public/Screenshot 2025-07-04 095005.png</h1>
-
+![login page ](../public/Screenshot 2025-07-04 095005.png)
 ---
 
 ## 🚀 Features
